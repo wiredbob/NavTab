@@ -63,7 +63,7 @@
     
     // Set up the cell...
 	NSUInteger row = indexPath.row;
-	cell.text = [moreOptions objectAtIndex:row];
+	cell.textLabel.text = [moreOptions objectAtIndex:row];
     return cell;
 }
 

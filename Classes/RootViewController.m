@@ -60,7 +60,7 @@
     
     // Set up the cell...
 	NSUInteger row = indexPath.row;
-	cell.text = [accounts objectAtIndex:row];
+	cell.textLabel.text = [accounts objectAtIndex:row];
     return cell;
 }
 
