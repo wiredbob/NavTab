@@ -73,6 +73,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
+    [tableView deselectRowAtIndexPath:indexPath animated:FALSE];
+    
 	MoreOptionViewController *moreOptionViewController = [[MoreOptionViewController alloc] initWithNibName:@"MoreOptionView" bundle:nil];
 	NSString *msg = [[NSString alloc] initWithFormat:@"Selected %u", indexPath.row + 1];
 	
